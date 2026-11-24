@@ -1,0 +1,6 @@
+data/hard/
+data/arsas.parquet
+data/processed/
+models/
+__pycache__/
+*.pyc
