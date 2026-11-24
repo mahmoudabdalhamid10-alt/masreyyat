@@ -1,0 +1,90 @@
+{
+  "model": "char_wb 3-5gram TF-IDF + LogisticRegression(C=2.0, class_weight=balanced)",
+  "seed": 42,
+  "train_seconds": 15.0,
+  "train_data": "HARD balanced hotel reviews, 90% stratified split (n=95128)",
+  "in_domain_hard_test": {
+    "n": 10570,
+    "accuracy": 0.9439,
+    "macro_f1": 0.9439,
+    "per_class": {
+      "neg": {
+        "precision": 0.9471978650400305,
+        "recall": 0.9402081362346263,
+        "f1-score": 0.9436900579242237,
+        "support": 5285.0
+      },
+      "pos": {
+        "precision": 0.9406461307287753,
+        "recall": 0.9475875118259224,
+        "f1-score": 0.9441040625883683,
+        "support": 5285.0
+      },
+      "accuracy": 0.9438978240302743,
+      "macro avg": {
+        "precision": 0.9439219978844029,
+        "recall": 0.9438978240302743,
+        "f1-score": 0.9438970602562959,
+        "support": 10570.0
+      },
+      "weighted avg": {
+        "precision": 0.943921997884403,
+        "recall": 0.9438978240302743,
+        "f1-score": 0.943897060256296,
+        "support": 10570.0
+      }
+    },
+    "confusion_matrix": [
+      [
+        4969,
+        316
+      ],
+      [
+        277,
+        5008
+      ]
+    ]
+  },
+  "transfer_arsas_egyptian_tweets": {
+    "n": 11784,
+    "accuracy": 0.5401,
+    "macro_f1": 0.5314,
+    "per_class": {
+      "neg": {
+        "precision": 0.8507142857142858,
+        "recall": 0.32258938244853735,
+        "f1-score": 0.4677926158680283,
+        "support": 7384.0
+      },
+      "pos": {
+        "precision": 0.4432324131789849,
+        "recall": 0.905,
+        "f1-score": 0.595038852361028,
+        "support": 4400.0
+      },
+      "accuracy": 0.5400543109300747,
+      "macro avg": {
+        "precision": 0.6469733494466353,
+        "recall": 0.6137946912242687,
+        "f1-score": 0.5314157341145281,
+        "support": 11784.0
+      },
+      "weighted avg": {
+        "precision": 0.6985655892482875,
+        "recall": 0.5400543109300747,
+        "f1-score": 0.515304788353534,
+        "support": 11784.0
+      }
+    },
+    "confusion_matrix": [
+      [
+        2382,
+        5002
+      ],
+      [
+        418,
+        3982
+      ]
+    ]
+  }
+}
